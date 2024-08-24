@@ -5,13 +5,13 @@ using TelemetryPortal_MVC.Models;
 
 namespace TelemetryPortal_MVC.Data;
 
-public partial class TechtrendsContext : DbContext
+public partial class Techtrends2Context : DbContext
 {
-    public TechtrendsContext()
+    public Techtrends2Context()
     {
     }
 
-    public TechtrendsContext(DbContextOptions<TechtrendsContext> options)
+    public Techtrends2Context(DbContextOptions<Techtrends2Context> options)
         : base(options)
     {
     }
@@ -19,6 +19,12 @@ public partial class TechtrendsContext : DbContext
     public virtual DbSet<Client> Clients { get; set; }
 
     public virtual DbSet<Project> Projects { get; set; }
+
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=project2-38082918.database.windows.net;Database=TechTrends2;User Id=cmpg323;Password=cmpg@323;");
+
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
