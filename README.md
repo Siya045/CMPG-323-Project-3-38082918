@@ -51,3 +51,7 @@ The ClientsController handles requests related to clients, such as viewing all c
 
 ### Managing Projects:
 The ProjectsController handles project-related operations, such as listing all projects, associating them with clients, and managing project details. The controller interacts with the IProjectRepository for database operations.
+
+![Screenshot 2024-08-25 121704](https://github.com/user-attachments/assets/bdd4371f-43c8-49e8-8649-8a2bb77149cf)
+
+
