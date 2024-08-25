@@ -12,42 +12,51 @@ namespace TelemetryPortal_MVC.Repository
             _context = context;
 
         }
-       
+
+        // Adds a single entity to the database.
         public void Add(T entity)
         {
             _context.Set<T>().Add(entity);
         }
 
+        // Adds multiple entities to the database at once.
         public void AddRange(IEnumerable<T> entities)
         {
             _context.Set<T>().AddRange(entities);
         }
 
+        // Finds entities that match a specific condition.
         public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         {
             return _context.Set<T>().Where(expression);
         }
 
+        // Retrieves all entities from the database.
         public IEnumerable<T> GetAll()
         {
             return _context.Set<T>().ToList();
         }
 
-
+        // Retrieves an entity by its ID.
         public T GetByID(int id)
         {
             return _context.Set<T>().Find(id);
         }
 
+        // Removes a single entity from the database.
         public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
         }
+
+        // Removes multiple entities from the database at once.
         public void RemoveRange(IEnumerable<T> entities)
         {  
             _context.Set<T>().RemoveRange(entities); 
         }
 
+
+        // Updates an existing entity in the database.
         public void Update(T entity)
         {
             _context.Set<T>().Update(entity);

@@ -4,16 +4,6 @@ using TelemetryPortal_MVC.Models;
 
 namespace TelemetryPortal_MVC.Repository
 {
-    /* public class ClientRepository
-     {
-         private readonly Techtrends2Context _context = new Techtrends2Context();
-
-         public IEnumerable<Client> GetAll()
-         {
-             return  _context.Clients.ToList();
-         }
-     }*/
-
     public class ClientRepository
     {
         private readonly Techtrends2Context _context;
