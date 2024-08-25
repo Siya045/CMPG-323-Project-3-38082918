@@ -1,5 +1,5 @@
 # Project3
-## TechTrends Web App
+## Telemetry Management Portal
 The TechTrends Telemetry Management System is an MVC web application designed to help TechTrends, our company specializing in developing and deploying automated systems, manage its clients and projects. The application also allows TechTrends to collect telemetry data from client sites using its solutions to measure time and cost savings. The application requires a user to login and information about clients and projects can be viewed, such as the client ID, Primary Contact Email and Date Onboarded. CRUD functionalities can be executed for related data in the application. The same functionalities can be executed for the Projects.
 
 ## Architectural Pattern
