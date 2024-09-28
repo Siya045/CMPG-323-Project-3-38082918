@@ -5,9 +5,9 @@ namespace TelemetryPortal_MVC.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected readonly Techtrends2Context _context;
+        protected readonly TechtrendsContext _context;
 
-        public GenericRepository(Techtrends2Context context)
+        public GenericRepository(TechtrendsContext context)
         {
             _context = context;
 

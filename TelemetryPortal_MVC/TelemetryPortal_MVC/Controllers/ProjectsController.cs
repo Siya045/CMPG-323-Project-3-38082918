@@ -13,10 +13,10 @@ namespace TelemetryPortal_MVC.Controllers
 {
     public class ProjectsController : Controller
     {
-        private readonly Techtrends2Context _context;
+        private readonly TechtrendsContext _context;
         private readonly IProjectRepository _projectRepository;
 
-        public ProjectsController(Techtrends2Context context, IProjectRepository projectRepository)
+        public ProjectsController(TechtrendsContext context, IProjectRepository projectRepository)
         {
             _context = context;
             this._projectRepository = projectRepository;

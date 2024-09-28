@@ -13,9 +13,9 @@ namespace TelemetryPortal_MVC.Controllers
 {
     public class ClientsController : Controller
     {
-        private readonly Techtrends2Context _context;
+        private readonly TechtrendsContext _context;
 
-        public ClientsController(Techtrends2Context context)
+        public ClientsController(TechtrendsContext context)
         {
             _context = context;
         }

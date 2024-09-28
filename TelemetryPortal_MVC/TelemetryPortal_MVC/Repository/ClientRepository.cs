@@ -6,10 +6,10 @@ namespace TelemetryPortal_MVC.Repository
 {
     public class ClientRepository
     {
-        private readonly Techtrends2Context _context;
+        private readonly TechtrendsContext _context;
 
         // Constructor injection for the DbContext
-        public ClientRepository(Techtrends2Context context)
+        public ClientRepository(TechtrendsContext context)
         {
             _context = context;
         }

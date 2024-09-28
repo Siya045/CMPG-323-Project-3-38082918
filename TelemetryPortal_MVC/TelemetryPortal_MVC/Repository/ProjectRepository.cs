@@ -6,7 +6,7 @@ namespace TelemetryPortal_MVC.Repository
 {
     public class ProjectRepository : GenericRepository<Project>, IProjectRepository
     {
-        public ProjectRepository(Techtrends2Context context) : base(context) 
+        public ProjectRepository(TechtrendsContext context) : base(context) 
         {
             
         }
